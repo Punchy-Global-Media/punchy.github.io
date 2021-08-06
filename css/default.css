@@ -1,0 +1,345 @@
+/* overall box sizing*/
+* {
+    box-sizing: border-box;
+  }
+/* Body properties*/
+  body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+  }
+/* caption under my animating pictures*/
+  .caption{
+    font-size: 15px;
+    text-shadow: 0 0 3px #8d0606;
+    text-align: center;
+  }
+/* Header/Blog Title */
+  .myName, h1{
+    padding: 30px;
+    text-align: center;
+    background: white;
+  }
+  /* Style the welcome moving object */
+  .topnav2 {
+    overflow: hidden;
+    background-color: #055a07;
+    color: rgb(255, 255, 255);
+    border: 1px solid green;
+    text-shadow: 0 0 3px #8d0606;
+  } 
+/* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: rgb(27, 43, 27);
+    display: block;    
+  }
+/* Style the background of my animating images*/
+  .myImages{
+    background-image: url('searchicon.png');
+  }
+/* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: 2px solid rgb(0, 255, 0);
+    
+  }
+/* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+/* Style my animating name caption*/
+  .ani {
+    width: 400px;
+    height: 20px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;  
+    margin-left: 230px;
+    text-shadow: 0 0 3px #8d0606;
+  }  
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    100% {background-color:rgb(247, 242, 242); left:0px; top:0px;}
+    75%  {background-color:yellow; left:200px; top:0px;}
+  }
+/* Style my animating images*/
+  .test {
+    width: 500px;
+    height: 300px;
+    background-color: red;
+    animation-name: examplee;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    margin-left: 400px;
+    border: 1px solid rgb(0, 255, 0);
+    margin: auto;
+  }
+  @keyframes examplee {
+    from {background-image: url("yes3.jpg");}
+    to {background-image: url("yes.png");}
+  }
+/* Style the latest graphic design button*/
+  .button, .lgd {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 21px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100%;
+    text-shadow: 0 0 3px #8d0606;
+    padding: 5px;
+    text-align: center;
+    background-color: #062c01;
+    border: solid 1px #c3c3c3;
+  }  
+  .lgd{
+    padding: 50px;
+    display: none;
+    background-image: url("searchicon.png");}
+
+    #tooltip {
+      position: relative;
+      display: inline-block;
+      border-bottom: 1px dotted black;
+      text-align: center;
+      text-shadow: 0 0 3px #8d0606;
+      margin-left: 600px;
+    }
+    #tooltip {
+      position: relative;
+      text-align: center;
+      text-shadow: 0 0 3px #8d0606;
+      margin-left: auto;
+      width: 100%;
+      
+    }
+    
+    #tooltiptext {
+      visibility: hidden;
+      width: 120px;
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px 0;
+      position: absolute;
+      z-index: 1;
+      bottom: 150%;
+      left: 50%;
+      margin-left: -60px;
+      font-size: 15px;
+    }
+    
+ #tooltiptext::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: black transparent transparent transparent;
+    }
+    
+    #tooltip:hover #tooltiptext {
+      visibility: visible;
+    }
+    .button2 {
+      background-color: #062c01;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 21px;
+      margin: 4px 2px;
+      cursor: pointer;
+      width: 100%;
+      text-shadow: 0 0 3px #8d0606;
+    }
+
+    .button3 {
+      background-color: #062c01;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 21px;
+      margin: 4px 2px;
+      cursor: pointer;
+      width: 100%;
+      text-shadow: 0 0 3px #8d0606;
+    }
+    .aboutMe{
+      color: rgb(14, 0, 0); 
+      display: none;
+    }
+    .head{
+      display: none;
+    }
+    .myForm, .sub{
+      padding: 50px;
+      display: none;
+      background-color: #4b1200;
+      box-sizing: border-box;
+      color: #ffeedc;
+      text-shadow: 0 0 5px #ffffff;
+          }
+input[type=text], select {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 4px solid#ffffff;
+    border-radius: 4px;
+    color: rgb(1, 27, 1);
+    font-size: 20px;
+              } 
+ .button2, .myForm, .sub{
+        padding: 5px;
+        text-align: center;
+        
+        border: solid 1px #c3c3c3;
+      }
+textarea {
+  width: 55%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+  margin-left: 63px;
+}
+
+input[type=submit] {
+        width: 40%;
+        background-color:#ce9a7e;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;}
+
+      input[type=submit]:hover {
+        background-color: #ae6337;
+      }
+    .country{
+      width: 100%;
+    }
+    .search{
+      width: 100%;
+      box-sizing: border-box;
+      border: 3px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      background-color: white;
+      background-image: url('searchicon.png');
+      background-position:  10px; 
+      background-repeat: no-repeat;
+      padding: 12px 20px 12px 40px;
+    }
+  .sub{
+    background-color: gray;
+    
+    color: red;
+    font-size: medium;
+      }
+
+  .socialHand {
+    color: #8c2242;
+    background-color: #fbdcfe; 
+    width: 100%;
+    text-align: center;
+    
+  }  
+  .socialHandles {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fbdcfe;
+    
+  }
+  
+  .socialHandles > div {
+    background-color: #f1f1f1;
+    width: fit-content;
+    margin-left: 30px;
+    text-align: center;
+    line-height: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    
+  }
+  a {
+    text-decoration: none;
+    
+  }
+  
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .testimony {
+    flex-direction: column;
+  }
+}
+.fbicon {
+  background-image: url("facebook.png");}
+
+  #love {
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    position: relative;
+    animation-name: love;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    margin-left: 500px;
+  
+  }
+  
+  @keyframes love {
+   
+    75%  {background-color:rgb(255, 0, 0); left:200px; top:0px;}
+    50%  {background-color:rgb(26, 80, 1); left:200px; top:0px;}
+    0%   {background-color:rgb(10, 1, 66); left:0px; top:0px;}
+    
+    
+  }
+
+
+    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
