@@ -58,20 +58,21 @@
   .ani {
     width: 400px;
     height: 20px;
-    background-color: red;
+    background-color: rgb(155, 0, 0);
     position: relative;
     animation-name: example;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-direction: alternate;  
     margin-left: 230px;
+    color: white;
     text-shadow: 0 0 3px #8d0606;
   }  
   @keyframes example {
     0%  {background-color:yellow; left:200px; top:0px;}
     25%   {background-color:red; left:0px; top:0px;}
     100%   {background-color:rgb(0, 99, 0); left:0px; top:0px;}
-    75%   {background-color:rgb(34, 28, 121); left:0px; top:0px;}
+    75%   {background-color:rgb(6, 0, 90); left:0px; top:0px;}
   }
 /* Style my animating images*/
   .test {
@@ -339,13 +340,25 @@ input[type=submit] {
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
-  .ani, .you, .topnav, .myImages, .test{   
+   .you, .topnav, .myImages, .test{   
     width: 100%;
     padding: 0;
     box-sizing: border-box;
     margin-left:0%;
     float: left;
   }
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .ani {   
+   width: 100%;
+   padding: 0;
+   box-sizing: border-box;
+   margin-left:0%;
+   float: left;
+   color: white;
+   font-size: 13px;
+ }
 }
   
   /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
